@@ -1,0 +1,51 @@
+.title {
+    /*height: 60rpx;*/
+    background: #eee;
+    font-size: 36rpx;
+    margin: 0 0 26rpx;
+}
+.title text {
+    font-family: "微软雅黑";
+    color: #888;
+    display: block;
+    padding: 16rpx 0 16rpx 30rpx
+}
+.content {
+    font-size: 32rpx;
+    padding: 0 20rpx 26rpx;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.content text {
+    width: 180rpx;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 25rpx 0 0;
+    color: #666
+}
+.content input {
+    width: 450rpx; 
+    display: inline-flex;
+    align-items: center;
+    /*flex-grow: 1;*/
+    border: 1px solid #eee;
+    padding: 6rpx 10px;
+}
+.content textarea {
+    border: 1px solid #eee;
+    padding: 20rpx
+}
+.btn {
+    display: inline-block;
+    font-size: 32rpx;
+    margin: 15rpx 20rpx;
+    width: 320rpx
+}
+.btnGrop {
+    padding: 0 15rpx;
+    width: 720rpx;
+    /*position: fixed;
+    bottom: 0;
+    background: #CCC*/
+}

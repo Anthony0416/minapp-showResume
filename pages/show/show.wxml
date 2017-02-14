@@ -1,0 +1,12 @@
+<text>{{name}}</text>
+<text>{{sex}}</text>
+<text>{{nation}}</text>
+<text>{{birthday}}</text>
+<text>{{schoolTag}}</text>
+<text>{{wanted}}</text>
+<text>{{phone}}</text>
+<text>{{email}}</text>
+<text>{{education}}</text>
+<text>{{experience}}</text>
+<text>{{skill}}</text>
+<text>{{introduction}}</text>
