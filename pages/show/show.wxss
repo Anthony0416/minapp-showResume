@@ -1,3 +1,39 @@
-text {
-    display: block
+page {
+    background: #f0f1f5;
+    font-family: "微软雅黑";  
+}
+.box {
+    margin: 0 0 20rpx;
+    background: #fff;
+}
+.box_head {
+    padding: 20rpx 0;
+    margin: 0 20rpx 20rpx;
+    border-bottom:  1px solid #dcdcdc
+}
+.box_head image{
+    width: 35rpx;
+    height: 35rpx
+}
+.box_head text{
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #525567;
+    margin-left: 10rpx
+}
+.personIfo,.moreText {
+    padding: 0 62rpx 20rpx;
+    font-size: 26rpx;
+}
+.personIfo_name {
+    display: inline-block;
+    width: 140rpx;
+}
+.personIfo_data {
+    font-weight: bold
+}
+.moreText {
+    width: 710rpx;
+    line-height: 40rpx;
+    padding: 0 20rpx 20rpx;
 }

@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/edit/edit",
-    "pages/show/show"
+    "pages/show/show",
+    "pages/edit/edit"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -13,16 +13,10 @@ Page({
     wanted: '',
     phone: '',
     email: '',
-    education: '',
-    experience: '',
+    edu: '',
+    exp: '',
     skill: '',
-    introduction: ''
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    intro: ''
   },
   onLoad: function () {
     var that = this
@@ -42,12 +36,12 @@ Page({
     var wanted = wx.getStorageSync('wanted')
     var phone = wx.getStorageSync('phone')
     var email = wx.getStorageSync('email')
-    var education = wx.getStorageSync('education')
-    var experience = wx.getStorageSync('experience')
+    var edu = wx.getStorageSync('edu')
+    var exp = wx.getStorageSync('exp')
     var skill = wx.getStorageSync('skill')
-    var introduction = wx.getStorageSync('introduction')
+    var intro = wx.getStorageSync('intro')
     // 判断数据是否存在
-    if (name||sex||nation||birthday||schoolTag||wanted||phone||email||education||experience||skill||introduction) {
+    if (name||sex||nation||birthday||schoolTag||wanted||phone||email||edu||exp||skill||intro) {
       that.setData({
         name: name,
         sex: sex,
@@ -57,10 +51,10 @@ Page({
         wanted: wanted,
         phone: phone,
         email: email,
-        education: education,
-        experience: experience,
+        edu: edu,
+        exp: exp,
         skill: skill,
-        introduction: introduction
+        intro: intro
       })
     } else {
       that.setData({
@@ -70,7 +64,7 @@ Page({
   },
   show: function() {
     wx.navigateTo({
-      url: '../show/show?name='+this.data.name+'&sex='+this.data.sex+'&nation='+this.data.nation+'&birthday='+this.data.birthday+'&schoolTag='+this.data.schoolTag+'&wanted='+this.data.wanted+'&phone='+this.data.phone+'&email='+this.data.email+'&education='+this.data.education+'&experience='+this.data.experience+'&skill='+this.data.skill+'&introduction='+this.data.introduction
+      url: '../show/show?name='+this.data.name+'&sex='+this.data.sex+'&nation='+this.data.nation+'&birthday='+this.data.birthday+'&schoolTag='+this.data.schoolTag+'&wanted='+this.data.wanted+'&phone='+this.data.phone+'&email='+this.data.email+'&edu='+this.data.edu+'&exp='+this.data.exp+'&skill='+this.data.skill+'&intro='+this.data.intro
     })
   },
   edit: function() {

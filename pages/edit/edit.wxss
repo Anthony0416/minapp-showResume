@@ -14,8 +14,7 @@
     font-size: 32rpx;
     padding: 0 20rpx 26rpx;
     display: flex;
-    flex-flow: row wrap;
-    
+    flex-flow: row wrap; 
 }
 .content text {
     width: 180rpx;
@@ -32,9 +31,14 @@
     border: 1px solid #eee;
     padding: 6rpx 10px;
 }
-.content textarea {
+.textarea {
+    font-size: 32rpx;
+    padding: 0 20rpx 26rpx;
+}
+.textarea textarea {
     border: 1px solid #eee;
-    padding: 20rpx
+    padding: 20rpx;
+    width: 665rpx
 }
 .btn {
     display: inline-block;

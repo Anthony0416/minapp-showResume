@@ -1,12 +1,71 @@
-<text>{{name}}</text>
-<text>{{sex}}</text>
-<text>{{nation}}</text>
-<text>{{birthday}}</text>
-<text>{{schoolTag}}</text>
-<text>{{wanted}}</text>
-<text>{{phone}}</text>
-<text>{{email}}</text>
-<text>{{education}}</text>
-<text>{{experience}}</text>
-<text>{{skill}}</text>
-<text>{{introduction}}</text>
+<view class="body">
+    <view class="box">
+        <view class="box_head">
+            <image src="../../image/1.png"></image>
+            <text>个人介绍</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">姓  名：</text>
+            <text class="personIfo_data">{{name}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">性  别：</text>
+            <text class="personIfo_data">{{sex}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">民  族：</text>
+            <text class="personIfo_data">{{nation}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">出生年月：</text>
+            <text class="personIfo_data">{{birthday}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">毕业院校：</text>
+            <text class="personIfo_data">{{schoolTag}}</text>
+        </view> 
+        <view class="personIfo">
+            <text class="personIfo_name">求职意向：</text>
+            <text class="personIfo_data">{{wanted}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">联系电话：</text>
+            <text class="personIfo_data">{{phone}}</text>
+        </view>
+        <view class="personIfo">
+            <text class="personIfo_name">联系邮箱：</text>
+            <text class="personIfo_data">{{email}}</text>
+        </view>        
+    </view>
+    <view class="box">
+        <view class="box_head">
+            <image src="../../image/2.png"></image>
+            <text>教育背景</text>
+        </view>
+        <view class="moreText">{{edu}}</view>
+    </view>
+    <view class="box">
+        <view class="box_head">
+            <image src="../../image/4.png"></image>
+            <text>工作经验</text>
+        </view>
+        <view class="moreText">{{exp}}</view>
+        <!--<textarea value="{{exp}}" disabled="true" auto-height  class="moreText"></textarea>-->
+    </view>
+    <view class="box">
+        <view class="box_head">
+            <image src="../../image/3.png"></image>
+            <text>专业技能</text>
+        </view>
+        <view class="moreText">{{skill}}</view>
+        <!--<textarea value="{{skill}}" disabled="true" auto-height  class="moreText"></textarea>-->
+    </view>
+    <view class="box">
+        <view class="box_head">
+            <image src="../../image/5.png"></image>
+            <text>自我评价</text>
+        </view>
+        <view class="moreText">{{intro}}</view>
+        <!--<textarea value="{{intro}}" disabled="true" auto-height  class="moreText"></textarea>-->
+    </view>
+</view>

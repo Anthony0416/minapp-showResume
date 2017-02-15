@@ -4,59 +4,59 @@
     </view>
     <view class="content">
         <text>姓名：</text>
-        <input bindinput="bindName" type="text" value="{{name}}"/>
+        <input bindblur="bindName" type="text" value="{{name}}"/>
     </view>
     <view class="content">
         <text>性别：</text>
-        <input bindinput="bindSex" type="text" value="{{sex}}"/>
+        <input bindblur="bindSex" type="text" value="{{sex}}"/>
     </view>
     <view class="content">
         <text>民族：</text>
-        <input bindinput="bindNation" type="text" value="{{nation}}"/>
+        <input bindblur="bindNation" type="text" value="{{nation}}"/>
     </view>
     <view class="content">
         <text>出生年月 ：</text>
-        <input bindinput="bindBirthday" type="digit" value="{{birthday}}"/>
+        <input bindblur="bindBirthday" type="digit" value="{{birthday}}"/>
     </view>
     <view class="content">
         <text>毕业院校：</text>
-        <input bindinput="bindSchoolTag" type="text" value="{{schoolTag}}"/>
+        <input bindblur="bindSchoolTag" type="text" value="{{schoolTag}}"/>
     </view>
     <view class="content">
         <text>求职意向：</text>
-        <input bindinput="bindWanted" type="text" value="{{wanted}}"/>
+        <input bindblur="bindWanted" type="text" value="{{wanted}}"/>
     </view>
     <view class="content">
         <text>电话：</text>
-        <input bindinput="bindPhone" type="number" value="{{phone}}"/>
+        <input bindblur="bindPhone" type="number" value="{{phone}}"/>
     </view>
     <view class="content">
         <text>邮箱：</text>
-        <input bindinput="bindEmail" type="text" value="{{email}}"/>
+        <input bindblur="bindEmail" type="text" value="{{email}}"/>
     </view>
     <view class="title">
         <text>教育背景：</text>
     </view>
-    <view class="content">
-        <textarea bindinput="bindEducation" auto-height maxlength="-1" placeholder="教育背景应包含时间，院校名称，学习内容等。" value="{{education}}"/>
+    <view class="textarea">
+        <textarea bindblur="bindEducation" auto-height maxlength="-1" placeholder="教育背景应包含时间，院校名称，学习内容等。" value="{{edu}}"/>
     </view>
     <view class="title">
         <text>工作经历：</text>
     </view>
-    <view class="content">
-        <textarea bindinput="bindExperience" auto-height maxlength="-1" placeholder="工作经历应包含工作时间，工作内容等" value="{{experience}}"/>
+    <view class="textarea">
+        <textarea bindblur="bindExperience" auto-height maxlength="-1" placeholder="工作经历应包含工作时间，工作内容等" value="{{exp}}"/>
     </view>
     <view class="title">
         <text>专业技能：</text>
     </view>
-    <view class="content">
-        <textarea bindinput="bindSkill" auto-height maxlength="-1" placeholder="请在此描述您的专业技能信息" value="{{skill}}"/>
+    <view class="textarea">
+        <textarea bindblur="bindSkill" auto-height maxlength="-1" placeholder="请在此描述您的专业技能信息" value="{{skill}}"/>
     </view>
     <view class="title">
         <text>自我评价：</text>
     </view>
-    <view class="content">
-        <textarea bindinput="bindIntroduction" auto-height maxlength="-1" placeholder="请填写您对自己的评价" value="{{introduction}}"/>
+    <view class="textarea">
+        <textarea bindblur="bindIntroduction" auto-height maxlength="-1" placeholder="请填写您对自己的评价" value="{{intro}}"/>
     </view>
     <view class="btnGrop">
         <button type="primary" plain="true" class="btn" bindtap="save">保 存</button>

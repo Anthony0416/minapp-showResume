@@ -8,42 +8,29 @@ Page({
         wanted: '',
         phone: '',
         email: '',
-        education: '',
-        experience: '',
+        edu: '',
+        exp: '',
         skill: '',
-        introduction: ''
+        intro: ''
     },
     onLoad: function () {
         // 从本地缓存中获取数据
-        var name = wx.getStorageSync('name')
-        var sex = wx.getStorageSync('sex')
-        var nation = wx.getStorageSync('nation')
-        var birthday = wx.getStorageSync('birthday')
-        var schoolTag = wx.getStorageSync('schoolTag')
-        var wanted = wx.getStorageSync('wanted')
-        var phone = wx.getStorageSync('phone')
-        var email = wx.getStorageSync('email')
-        var education = wx.getStorageSync('education')
-        var experience = wx.getStorageSync('experience')
-        var skill = wx.getStorageSync('skill')
-        var introduction = wx.getStorageSync('introduction')
         this.setData({
-            name: name,
-            sex: sex,
-            nation: nation,
-            birthday: birthday,
-            schoolTag: schoolTag,
-            wanted: wanted,
-            phone: phone,
-            email: email,
-            education: education,
-            experience: experience,
-            skill: skill,
-            introduction: introduction
+            name: wx.getStorageSync('name'),
+            sex: wx.getStorageSync('sex'),
+            nation: wx.getStorageSync('nation'),
+            birthday: wx.getStorageSync('birthday'),
+            schoolTag: wx.getStorageSync('schoolTag'),
+            wanted: wx.getStorageSync('wanted'),
+            phone: wx.getStorageSync('phone'),
+            email: wx.getStorageSync('email'),
+            edu: wx.getStorageSync('edu'),
+            exp: wx.getStorageSync('exp'),
+            skill: wx.getStorageSync('skill'),
+            intro: wx.getStorageSync('intro')
         })
     },
     bindName: function(e) {
-        console.log(e.detail.name)
         this.setData({
             name: e.detail.value
         })
@@ -85,12 +72,12 @@ Page({
     },
     bindEducation: function(e) {
         this.setData({
-            education: e.detail.value
+            edu: e.detail.value
         })
     },
     bindExperience: function(e) {
         this.setData({
-            experience: e.detail.value
+            exp: e.detail.value
         })
     },
     bindSkill: function(e) {
@@ -100,10 +87,11 @@ Page({
     },
     bindIntroduction: function(e) {
         this.setData({
-            introduction: e.detail.value
+            intro: e.detail.value
         })
     },
     save: function(e) {
+        wx.clearStorageSync()
         wx.setStorageSync('name', this.data.name)
         wx.setStorageSync('sex', this.data.sex)
         wx.setStorageSync('nation', this.data.nation)
@@ -112,10 +100,10 @@ Page({
         wx.setStorageSync('wanted', this.data.wanted)
         wx.setStorageSync('phone', this.data.phone)
         wx.setStorageSync('email', this.data.email)
-        wx.setStorageSync('education', this.data.education)
-        wx.setStorageSync('experience', this.data.experience)
+        wx.setStorageSync('edu', this.data.edu)
+        wx.setStorageSync('exp', this.data.exp)
         wx.setStorageSync('skill', this.data.skill)
-        wx.setStorageSync('introduction', this.data.introduction)
+        wx.setStorageSync('intro', this.data.intro)
         wx.showModal({
             title: '提示',
             content: '保存成功，是否返回主页？',
