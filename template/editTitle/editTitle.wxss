@@ -1,0 +1,12 @@
+.title {
+    /*height: 60rpx;*/
+    background: #eee;
+    font-size: 36rpx;
+    margin: 0 0 26rpx;
+}
+.title text {
+    font-family: "微软雅黑";
+    color: #888;
+    display: block;
+    padding: 16rpx 0 16rpx 30rpx
+}

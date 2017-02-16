@@ -56,7 +56,7 @@ Page({
 
 
 
-## V 1.0.0
+## V 1.0
 
 作为原始版本，这一版从最基础的功能开始做起，只有三个页面，分别为欢迎页，编辑简历页（集创建修改于一身），和简历查看页。
 
@@ -198,7 +198,7 @@ Page({
             }
         })
     },
-    
+    // 返回首页跳转 不保存数据
     back: function(e) {
         wx.showModal({
             title: '提示',
@@ -217,9 +217,47 @@ Page({
 })
 ```
 
+#### 查看页
+
+查看页为之前填写的数据展示，全部使用`<view>+<text>+<image>`，结合box-flex排版。
+
+![1-4](MdImage/4.jpg) ![1-5](MdImage/5.jpg)
+
+```
+// show.js
+Page({
+    data: {
+        name: '',
+        sex: '',
+        ……
+        intro: ''
+    },
+    onLoad: function(options){
+    	// 从url中取参存放在data中
+        this.setData({
+            name: options.name,
+            sex: options.sex,
+            ……
+            intro: options.intro
+        })
+    },
+    // 设置页面分享
+    onShareAppMessage: function () {
+        return {
+            title: '简历',
+            desc: '个人简历',
+            path: '/pages/show/show?name='+this.data.name+'&sex='+this.data.sex+'&nation='+this.data.nation+'&birthday='+this.data.birthday+'&schoolTag='+this.data.schoolTag+'&wanted='+this.data.wanted+'&phone='+this.data.phone+'&email='+this.data.email+'&edu='+this.data.edu+'&exp='+this.data.exp+'&skill='+this.data.skill+'&intro='+this.data.intro
+        }
+    }
+})
+```
 
 
 
+### V1.1
 
-textarea 使用value绑定data数据 在安卓机中存在数据渲染不上去的情况
+结合前面发现的Bug，同时结合编辑页输入框太多用户体验不好，所以加以改进。
 
+
+
+wxml wxss及js模板封装

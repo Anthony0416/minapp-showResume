@@ -5,7 +5,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="usermotto">
-    <button type="primary" plain="true" class="btn" bindtap="show" disabled="{{disabled}}">查看我的简历</button>
-    <button type="primary" plain="true" class="btn" bindtap="edit">编辑我的简历</button>
+    <button type="primary" plain="true" class="button" bindtap="show" disabled="{{disabled}}">查看我的简历</button>
+    <button type="primary" plain="true" class="button" bindtap="edit">编辑我的简历</button>
   </view>
 </view>

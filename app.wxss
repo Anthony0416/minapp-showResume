@@ -1,4 +1,7 @@
 /**app.wxss**/
+@import "./template/editTitle/editTitle.wxss";
+@import "./template/editBtnGroup/editBtnGroup.wxss";
+
 .container {
   /*height: 100%;*/
   display: flex;

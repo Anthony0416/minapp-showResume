@@ -1,0 +1,5 @@
+<template name="editTitle">
+  <view class="title">
+    <text>{{title}}：</text>
+  </view>
+</template>

@@ -69,7 +69,7 @@ Page({
   },
   edit: function() {
     wx.redirectTo({
-      url: '../edit/edit'
+      url: '../edit/base/base'
     })
   }
 })

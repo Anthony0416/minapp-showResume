@@ -1,0 +1,13 @@
+.btnGroup .btn {
+    display: inline-block;
+    font-size: 32rpx;
+    margin: 15rpx 20rpx;
+    width: 320rpx
+}
+.btnGroup {
+    padding: 0 15rpx;
+    width: 720rpx;
+    position: fixed;
+    bottom: 0;
+    background: #fff
+}

@@ -1,0 +1,7 @@
+<import src="../../../template/editTitle/editTitle.wxml" />
+<import src="../../../template/editBtnGroup/editBtnGroup.wxml" />
+<view>
+  <template is="editTitle" data="{{title}}"/>
+
+  <template is="editBtnGroup" data="{{nextBtn}}"/>
+</view>

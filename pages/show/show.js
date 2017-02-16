@@ -13,7 +13,7 @@ Page({
         skill: '',
         intro: ''
     },
-    onLoad: function(options){
+    onLoad: function (options) {
         this.setData({
             name: options.name,
             sex: options.sex,
@@ -34,7 +34,7 @@ Page({
         return {
             title: '简历',
             desc: '个人简历',
-            path: '/pages/show/show?name='+this.data.name+'&sex='+this.data.sex+'&nation='+this.data.nation+'&birthday='+this.data.birthday+'&schoolTag='+this.data.schoolTag+'&wanted='+this.data.wanted+'&phone='+this.data.phone+'&email='+this.data.email+'&edu='+this.data.edu+'&exp='+this.data.exp+'&skill='+this.data.skill+'&intro='+this.data.intro
+            path: '/pages/show/show?name=' + this.data.name + '&sex=' + this.data.sex + '&nation=' + this.data.nation + '&birthday=' + this.data.birthday + '&schoolTag=' + this.data.schoolTag + '&wanted=' + this.data.wanted + '&phone=' + this.data.phone + '&email=' + this.data.email + '&edu=' + this.data.edu + '&exp=' + this.data.exp + '&skill=' + this.data.skill + '&intro=' + this.data.intro
         }
     }
 })
