@@ -1,0 +1,44 @@
+.content {
+    font-size: 32rpx;
+    padding: 0 20rpx 26rpx;
+    display: flex;
+    flex-flow: row wrap; 
+}
+.content text {
+    width: 180rpx;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 25rpx 0 0;
+    color: #666
+}
+.content input,.picker {
+    width: 450rpx; 
+    display: inline-flex;
+    align-items: center;
+    /*flex-grow: 1;*/
+    border: 1px solid #eee;
+    padding: 6rpx 10px;
+}
+.picker {
+    width: 460rpx;
+    height: 1.6rem;
+    padding: 0 20rpx;
+}
+.textarea {
+    font-size: 32rpx;
+    padding: 0 20rpx 26rpx;
+}
+.textarea text {
+    display: block;
+    padding: 0 0 14rpx 0
+}
+.textarea textarea {
+    border: 1px solid #eee;
+    padding: 20rpx;
+    width: 665rpx
+}
+.br {
+    height: 1px;
+    background: #eee;
+    margin: 15rpx 20rpx 30rpx
+}
