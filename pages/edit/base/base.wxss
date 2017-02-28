@@ -20,9 +20,10 @@
     padding: 6rpx 10px;
 }
 .picker {
-    width: 460rpx;
-    height: 1.6rem;
-    padding: 0 20rpx;
+    /*border: none;
+    width: 450rpx;*/
+    height: 1.5rem;
+    /*padding: 0 20rpx;*/
 }
 .textarea {
     font-size: 32rpx;

@@ -1,4 +1,4 @@
-function back() {
+function quit() {
     wx.showModal({
         title: '提示',
         content: '是否要放弃未保存的内容并返回主页？',
@@ -11,6 +11,12 @@ function back() {
                 })
             }
         }
+    })
+}
+
+function back(add) {
+    wx.redirectTo({
+        url: add
     })
 }
 
@@ -36,6 +42,7 @@ function save() {
     })
 }
 
+module.exports.quit = quit
 module.exports.back = back
 module.exports.next = next
 module.exports.save = save
