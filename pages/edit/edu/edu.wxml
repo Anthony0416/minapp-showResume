@@ -2,38 +2,28 @@
 <import src="../../../template/editBtnGroup/editBtnGroup.wxml" />
 <view>
   <template is="editTitle" data="{{title}}" />
-  <view class="content">
-    <text>毕业时间：</text>
+  <block wx:for="{{eduDates}}" wx:for-index="idx">
     <view>
-      <picker mode="date" value="{{eduData1}}" start="1960-01-01" end="2017-01-01" bindchange="bindeduData1">
-        <view class="picker">{{eduData1}}</view>
-      </picker>
+      <view class="content">
+        <text>毕业时间：</text>
+        <view>
+          <picker mode="date" value="{{eduDates[idx]}}" start="1960-01-01" end="2017-01-01" bindchange="bindeduData1">
+            <view class="picker">{{eduDates[idx]}}</view>
+          </picker>
+        </view>
+        <icon id="{{idx}}" class="icon" type="clear"></icon>
+      </view>
+      <view class="content">
+        <text>毕业学校：</text>
+        <input bindfocus="bindFocus" bindblur="bindeduSchool" type="text" value="{{eduSchool[idx]}}" />
+      </view>
+      <view class="textarea">
+        <text>学习内容：</text>
+        <textarea bindblur="bindeduCont1" auto-height maxlength="-1" value="{{eduCont[idx]}}" />
+      </view>
+      <view class="br"></view>
     </view>
-  </view>
-  <view class="content">
-    <text>毕业学校：</text>
-    <input bindblur="bindeduSchool1" type="text" value="{{eduSchool1}}" />
-  </view>
-  <view class="textarea">
-    <text>学习内容：</text>
-    <textarea bindblur="bindeduCont1" auto-height maxlength="-1" value="{{eduCont1}}" />
-  </view>
-  <view class="br"></view>
-  <view class="content">
-    <text>毕业时间：</text>
-    <view>
-      <picker mode="date" value="{{eduData2}}" start="1960-01-01" end="2017-01-01" bindchange="bindeduData1">
-        <view class="picker">{{eduData2}}</view>
-      </picker>
-    </view>
-  </view>
-  <view class="content">
-    <text>毕业学校：</text>
-    <input bindblur="bindeduSchool2" type="text" value="{{eduSchool1}}" />
-  </view>
-  <view class="textarea">
-    <text>学习内容：</text>
-    <textarea bindblur="bindeduCont2" auto-height maxlength="-1" value="{{eduCont2}}" />
-  </view>
-  <template is="editBtnGroup" data="{{nextBtn}}" />
+  </block>
+  <view><icon type="info" color="gray"></icon>新增一条</view>
+  <template is="editBtnGroup" data="{{backBtn,nextBtn}}" />
 </view>

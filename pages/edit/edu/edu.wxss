@@ -20,9 +20,13 @@
     padding: 6rpx 10px;
 }
 .picker {
-    width: 460rpx;
+    width: 200rpx;
     height: 1.6rem;
     padding: 0 20rpx;
+}
+.icon {
+    margin-left: 200rpx;
+    float: right;
 }
 .textarea {
     font-size: 32rpx;

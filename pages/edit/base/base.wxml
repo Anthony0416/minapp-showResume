@@ -70,5 +70,5 @@
   <view class="textarea">
     <textarea bindblur="bindIntroduction" auto-height maxlength="-1" placeholder="请填写您对自己的评价" value="{{intro}}" />
   </view>-->
-  <template is="editBtnGroup" data="{{nextBtn}}"/>
+  <template is="editBtnGroup" data="{{backBtn,nextBtn}}"/>
 </view>

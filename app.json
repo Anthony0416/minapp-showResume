@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/edit/edu/edu",
     "pages/index/index",
     "pages/show/show",
     "pages/edit/base/base",
-    "pages/edit/edu/edu",
     "pages/edit/exp/exp",
     "pages/edit/skill/skill",
     "pages/edit/intro/intro"

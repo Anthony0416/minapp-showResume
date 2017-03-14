@@ -14,13 +14,7 @@ function quit() {
     })
 }
 
-function back(add) {
-    wx.redirectTo({
-        url: add
-    })
-}
-
-function next(add) {
+function goto(add) {
     wx.redirectTo({
         url: add
     })
@@ -43,6 +37,5 @@ function save() {
 }
 
 module.exports.quit = quit
-module.exports.back = back
-module.exports.next = next
+module.exports.goto = goto
 module.exports.save = save

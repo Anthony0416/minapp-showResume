@@ -271,3 +271,7 @@ Page({
 ##### wxml wxss及js模板封装
 
 首先创建pages同级目录template，用于存放组件，随后在该目录下新建editBtnGroup和editTitle两个子目录，每个目录下新建同名wxml和wxss文件用于模板文件的创建。同时editBtnGroup需要重复调用js跳转函数，干脆在这里做函数的封装，于是又创建了editBtnGroup.js
+
+
+
+float使用无效，基于rpx可直接margin，padding定位

@@ -4,6 +4,7 @@ Page({
         sexArr: ["男", "女"],
         index: 0,
         title: '个人基本信息',
+        backBtn: '退出编辑',
         nextBtn: '下一步',
         name: '',
         sex: '',
@@ -87,7 +88,7 @@ Page({
         wx.setStorageSync('wanted', this.data.wanted)
         wx.setStorageSync('phone', this.data.phone)
         wx.setStorageSync('email', this.data.email)
-        editBtnGroup.next('../edu/edu')
+        editBtnGroup.goto('../edu/edu')
     },
     back: function (e) {
         editBtnGroup.back()

@@ -1,6 +1,6 @@
 <template name="editBtnGroup">
   <view class="btnGroup">
-    <button plain="true" class="btn" bindtap="back">退出编辑</button>
+    <button plain="true" class="btn" bindtap="back">{{backBtn}}</button>
     <button type="primary" plain="true" class="btn" bindtap="save">{{nextBtn}}</button>
   </view>
 </template>
