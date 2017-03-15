@@ -15,11 +15,11 @@
       </view>
       <view class="content">
         <text>毕业学校：</text>
-        <input bindfocus="bindFocus" bindblur="bindeduSchool" type="text" value="{{eduSchool[idx]}}" />
+        <input bindfocus="bindFocus" bindblur="bindeduSchool" type="text" value="{{eduSchools[idx]}}" />
       </view>
       <view class="textarea">
         <text>学习内容：</text>
-        <textarea bindblur="bindeduCont1" auto-height maxlength="-1" value="{{eduCont[idx]}}" />
+        <textarea bindblur="bindeduCont1" auto-height maxlength="-1" value="{{eduConts[idx]}}" />
       </view>
       <view class="br"></view>
     </view>
